@@ -1,4 +1,4 @@
-# mini-projeto-devops
+# Mini-Projeto-DevOps
 
 Projeto prático utilizando:
 

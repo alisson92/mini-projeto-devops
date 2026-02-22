@@ -26,8 +26,11 @@ var books = []book{
 func main() {
 	router := gin.Default()
 
+	// Route default of API
+	router.GET("/api", getApi)
+
 	// Route of healthcheck
-	router.GET("/ping", getHealthcheck)
+	router.GET("/health", getHealthcheck)
 
 	// Route of books
 	router.GET("/books", getBooks)
@@ -37,8 +40,12 @@ func main() {
 	router.Run("localhost:8080")
 }
 
+func getApi(c *gin.Context) {
+	c.IndentedJSON(http.StatusOK, gin.H{"ping": "pong"})
+}
+
 func getHealthcheck(c *gin.Context) {
-	c.IndentedJSON(http.StatusOK, gin.H{"ping": "pong", "status": "online"})
+	c.IndentedJSON(http.StatusOK, gin.H{"status": "healthly"})
 }
 
 // getBooks pra retornar as informações dos livros em formato JSON.

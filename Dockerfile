@@ -1,0 +1,7 @@
+FROM golang:1.25.7-trixie
+RUN apt-get update && apt-get upgrade -y && rm -rf /var/lib/apt/lists/*
+WORKDIR /app
+COPY main.go .
+RUN go mod init example/web-service-gin && go get github.com/gin-gonic/gin
+EXPOSE 8080
+CMD ["go", "run", "main.go"]

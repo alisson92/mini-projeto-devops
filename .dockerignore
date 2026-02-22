@@ -5,8 +5,6 @@
 *.gitignore
 
 # Binários
-*.mod
-*.sum
 *.go
 
 # Dockerfile

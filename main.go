@@ -37,7 +37,7 @@ func main() {
 	router.GET("/books/:id", getBookByID)
 	router.POST("/books", postBooks)
 
-	router.Run("localhost:8080")
+	router.Run(":8080")
 }
 
 func getApi(c *gin.Context) {

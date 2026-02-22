@@ -1,6 +1,0 @@
-### Resumo do scan (só pra termos uma ideia de como está e como ficará a imagem) após aplicarmos as melhores práticas
-
-app-go:1.0 (debian 13.3)
-========================
-Total: 1125 (UNKNOWN: 11, LOW: 523, MEDIUM: 504, HIGH: 87, CRITICAL: 0)
-

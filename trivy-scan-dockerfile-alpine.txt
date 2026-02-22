@@ -1,0 +1,26 @@
+
+app-go-alpine:1.0 (alpine 3.23.3)
+=================================
+Total: 0 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
+
+
+opt/app (gobinary)
+==================
+Total: 3 (UNKNOWN: 0, LOW: 0, MEDIUM: 3, HIGH: 0, CRITICAL: 0)
+
+┌────────────────────────────┬────────────────┬──────────┬────────┬───────────────────┬───────────────┬─────────────────────────────────────────────────────────────┐
+│          Library           │ Vulnerability  │ Severity │ Status │ Installed Version │ Fixed Version │                            Title                            │
+├────────────────────────────┼────────────────┼──────────┼────────┼───────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ github.com/quic-go/quic-go │ CVE-2025-64702 │ MEDIUM   │ fixed  │ v0.54.1           │ 0.57.0        │ github.com/quic-go/quic-go/http3: quic-go HTTP/3 QPACK      │
+│                            │                │          │        │                   │               │ Header Expansion DoS                                        │
+│                            │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2025-64702                  │
+├────────────────────────────┼────────────────┤          │        ├───────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ golang.org/x/crypto        │ CVE-2025-47914 │          │        │ v0.40.0           │ 0.45.0        │ golang.org/x/crypto/ssh/agent: SSH Agent servers: Denial of │
+│                            │                │          │        │                   │               │ Service due to malformed messages                           │
+│                            │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2025-47914                  │
+│                            ├────────────────┤          │        │                   │               ├─────────────────────────────────────────────────────────────┤
+│                            │ CVE-2025-58181 │          │        │                   │               │ golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of │
+│                            │                │          │        │                   │               │ Service via unbounded memory consumption in GSSAPI          │
+│                            │                │          │        │                   │               │ authentication...                                           │
+│                            │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2025-58181                  │
+└────────────────────────────┴────────────────┴──────────┴────────┴───────────────────┴───────────────┴─────────────────────────────────────────────────────────────┘

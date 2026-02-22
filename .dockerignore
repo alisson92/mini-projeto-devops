@@ -1,2 +1,20 @@
+# IDE
+*.vscode
+
+# Git
+*.gitignore
+
+# Binários
+*.mod
+*.sum
+*.go
+
+# Dockerfile
+Dockerfile*
+
 # MD
 *.md
+
+# TXT
+*.txt
+

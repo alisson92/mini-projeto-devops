@@ -1,18 +1,18 @@
 # IDE
-*.vscode
+.vscode/
 
 # Git
-*.gitignore
+.gitignore
+.git/
 
-# Binários
-*.go
-
-# Dockerfile
+# Dockerfiles
 Dockerfile*
 
-# MD
+# MD ou txt
 *.md
-
-# TXT
 *.txt
 
+# Arquivos temporários (caso houver)
+*.log
+*.tmp
+.DS_Store

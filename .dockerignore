@@ -5,8 +5,9 @@
 .gitignore
 .git/
 
-# Dockerfiles
+# Docker
 Dockerfile*
+.dockerignore
 
 # MD ou txt
 *.md
